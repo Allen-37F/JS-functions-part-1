@@ -24,3 +24,21 @@ function discountPercentage(amt, discount) {
       console.log("Your discount is $"+ (amt * (discount/100))+".")
   }
 discountPercentage(50, 20)
+
+//exercise 4
+// Define a function called `stringCapitalize` that takes a string as an argument and returns the same string with the first letter of each word capitalized. Assume that each individual word is separated by only one space.
+function stringCapitalize(str) {
+
+    console.log(str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}));
+}
+stringCapitalize("i have a cat")
+
+//exercise 5
+// Define a function called `evenNumbers` that takes an arbitrary integer as an argument, from 0 to 100, and outputs all the even integers from 0 to that arbitrary number.
+function evenIntegers(num) {
+  for (i = 0; i <= num; i+=2) {
+    if (i % 2 === 0) {console.log(i);
+    }
+} 
+}
+console.log(evenIntegers(34))
